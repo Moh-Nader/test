@@ -1,0 +1,63 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    --font-parg : 15px;
+    --prime-clr: hsl(218, 44%, 22%);
+    --scnd-clr: hsl(220, 15%, 55%);
+    --background-clr: hsl(212, 45%, 89%);
+    --add-clr: hsl(0, 0%, 100%);
+    --pargph-font: 400;
+    --bold-font:700;
+}
+body{
+    background-color: var(--background-clr);
+}
+.card-container{
+    position: relative;
+    width: 100%;
+    height: 98vh;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    text-align: center;
+    width: 300px;
+    height: 460px;
+    padding: 5px;
+    background-color: var(--add-clr);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    border-radius: 5%;
+    box-shadow: 1px 0px 20px 0px hsl(218 44% 22% / 10%);
+    
+}
+.card img{
+    width: calc(100% - 20px);
+    border-radius: inherit;
+}
+.card h3{
+    font-weight: var(--bold-font);
+    font-size: 22px;
+    color: var(--prime-clr);
+
+}
+.card span{
+    font-size: 15px;
+    color: var(--scnd-clr);
+}
+
+.pargraph{
+    height: 153px;
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
