@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+    <title>Contact</title>
 </head>
 <body>
-  <div class="card-container">
-      <div class="card">
-      <img src="images/image-qr-code.png" alt="Qr Code">
-      <div class="pargraph">
-        <h3>Improve your front-end skills by building projects</h3>
-        <span>  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level  </span>
-
-      </div>
-  </div>
-  </div>
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Mohamed Nader</a>.
-  </div>
+    <nav>
+        <div class="logo">
+            <p>Bliss</p> <span>Contacts</span> <div class="arrow down"></div>
+            <div class="logo-sub-manu">
+                <Span>New Contact</Span>
+                <span>Search</span>
+            </div>
+        </div>
+        <ul>
+            <li><svg xmlns="http://www.w3.org/2000/svg" height="17" viewBox="0 96 960 960" width="20"><path d="M180 936q-24 0-42-18t-18-42V276q0-24 18-42t42-18h600q24 0 42 18t18 42v90h-60v-90H180v600h600v-90h60v90q0 24-18 42t-42 18H180Zm513-174-42-42 113-114H383v-60h381L651 432l42-42 186 186-186 186Z"/></svg>
+            <span>NEW VERSION</span>
+            </li>
+            <li><span>NEW CONTACT</span></li>
+            <li><div class="user status active"><span class="postion-center">MN</span></div></li>
+            <li><div class="notification"><svg xmlns="http://www.w3.org/2000/svg" height="17" viewBox="0 96 960 960" width="24"><path d="M160 856v-60h84V490q0-84 49.5-149.5T424 258v-29q0-23 16.5-38t39.5-15q23 0 39.5 15t16.5 38v29q81 17 131 82.5T717 490v306h83v60H160Zm320 120q-32 0-56-23.5T400 896h160q0 33-23.5 56.5T480 976Z"/></svg></div></li>
+            <li><div class="user profile"><span class="postion-center">MN</span></div></li>
+        </ul>
+    </nav>
+    <div class="body-container">
+        <div class="text-container">
+            <div class="text-container-head">
+                <div class="contact-name">
+                    <span>can't go online</span>
+                    <a href="#" target="_blank" rel="" class="main-btn">SKIP</a>
+                </div>
+                <div class="contact-type">
+                    <span>Rider>Account>Issue with login</span>
+                </div>
+                <div class="text-tags">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M7 809V159.6q0-27.455 18.688-46.027Q44.374 95 72 95h561.013q28.312 0 47.149 18.688Q699 132.375 699 160v399q0 27.625-18.975 46.312Q661.05 624 633 624H193L7 809Zm274 70q-28.85 0-46.925-18.975Q216 841.05 216 813V704h563V306h108.773q28.002 0 46.615 18.688Q953 343.375 953 371v687L774 879H281Z"/></svg>
+                        Messaging</span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M272.309 436.001H602v-96q0-51-35.618-87.5-35.617-36.5-86.5-36.5-50.882 0-86.382 36.5-35.5 36.5-35.5 87.5h-77.999q0-84.922 58.455-143.46 58.454-58.538 141.77-58.538t141.545 58.698q58.228 58.698 58.228 143.3v96h7.692q38.527 0 64.417 25.891 25.891 25.89 25.891 64.417v367.382q0 38.527-25.903 64.417-25.902 25.891-64.445 25.891H272.025q-38.543 0-64.283-25.891-25.741-25.89-25.741-64.417V526.309q0-38.527 25.891-64.417 25.89-25.891 64.417-25.891Zm208.063 351.998q31.782 0 53.704-22.294 21.923-22.295 21.923-54.077 0-31.782-22.294-53.704-22.295-21.923-54.077-21.923-31.782 0-53.704 22.294-21.923 22.295-21.923 54.077 0 31.782 22.294 53.704 22.295 21.923 54.077 21.923Z"/></svg>
+                        Open</span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M420 797h120V536H420v261Zm59.825-327q27.675 0 45.925-18.075Q544 433.851 544 406.175q0-27.675-18.075-45.925Q507.851 342 480.175 342q-27.675 0-45.925 18.075Q416 378.149 416 405.825q0 27.675 18.075 45.925Q452.149 470 479.825 470Zm.175 552q-92.64 0-174.467-34.604-81.828-34.603-142.077-94.852-60.249-60.249-94.852-142.077Q34 668.64 34 576q0-92.896 34.662-174.449 34.663-81.553 95.175-141.942 60.511-60.389 142.075-94.999Q387.476 130 480 130q92.886 0 174.476 34.593T796.44 259.56q60.374 60.374 94.967 141.99Q926 483.167 926 576.083q0 92.917-34.61 174.243t-94.999 141.837q-60.389 60.512-141.942 95.174Q572.896 1022 480 1022Z"/></svg>
+                        Crearted at saudi arabia</span>
+                </div>
+            </div>
+            <div class="text-container-body">
+                    <div class="rider"></div>
+                    <div class="agent"></div>
+                    <div class="action"></div>
+            </div>
+            <div class="text-messaging">
+                <div class="action-bar">
+                    <p>i want to</p>
+                    <button>ban rider device</button>
+                    <button>lock account</button>
+                    <button>unban rider device</button>
+                    <p>or</p>
+                    <div type="manu" class="action-bar-search">
+                        <button>something else</button>
+                    </div>
+                </div>
+                    <textarea name="massege" id="massege" cols="30" rows="10"></textarea>
+                    <button type="submit">Open</button>
+                    <button type="submit">Waiting</button>
+                    <button type="submit">Resolved</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="account-container">
+    </div>
 </body>
 </html>
