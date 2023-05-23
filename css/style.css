@@ -289,8 +289,8 @@ nav .active{
 }
 .action-bar{
     background-color: var(--sec-background-clr);
-    height: 20%;
-    font-size: var(--regular-font);
+    height: 70px;
+    font-size: var(--action-font);
     text-transform: uppercase;
     display: flex;
     width: 100%;
@@ -299,10 +299,13 @@ nav .active{
     color: var(--text-sec-clr);
 }
 .built-in-buttons{
-    height: 70%;
-    width: 78%;
+    height: 72%;
+    width: 75%;
     overflow: hidden;
     scroll-behavior: unset;
+}
+.built-in-buttons button {
+    margin-bottom: 1000px;
 }
 .action-bar button{
     background-color: inherit;
@@ -310,12 +313,16 @@ nav .active{
     display: inline-block;
     font-size: var(--action-font);
     padding: 10px;
-    margin: 5px;
+    margin: 2px;
     border-radius: 1%;
     text-transform: uppercase;
     color: var(--text-sec-clr);
     box-shadow: 0px 0px 1px 1px rgb(120 120 120 / 58%);
 
+}
+.action-bar-search{
+    position: absolute;
+    right: 20px;
 }
 .action-bar button:hover{
     cursor: pointer;
@@ -344,9 +351,57 @@ nav .active{
     height: 100%;
     resize: none;
 }
-.massageing-container button{
-    position: absolute;
-    top:90%;
-    left:70%;
 
+.ticket-status-buttons{
+    width: 250px;
+    height: 40px;
+    background-color: brown;
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    padding: 0px;
+    display: flex;
+}
+.ticket-status-buttons button{
+    width: 25%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid var(--sec-background-clr);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    border-radius: 50%;
+    border:2px solid #6c6c6c;
+    width: 30%;
+    height: 50%;
+    display:flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.ticket-status-buttons button svg{
+    fill: #fff;
+    width: 70%;
+    height: 70%;
+}
+.ticket-status-buttons button:first-child{
+    background-color: var(--sec-background-clr);
+}
+.ticket-status-buttons button:last-child{
+    background-color: var(--action-clr);
+}
+.ticket-status-buttons button:last-child .circle ,.ticket-status-buttons button:first-child .circle{
+    border:2px solid #fff;
+}
+.dot{
+    width: 2px;
+    height: 2px;
+    background-color: #6c6c6c;
+    margin-right:1px ;
+    margin-left: 1px;
+    border-radius: 50%;
 }
