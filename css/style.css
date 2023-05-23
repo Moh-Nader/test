@@ -48,6 +48,7 @@ svg{
     --driver-clr: rgb(254, 240, 235);            /* red */
     --big-font:30px;
     --mid-font: 36px;
+    --action-font:20px;
     --sm-font: 15px;
     --regular-font:400;
     --bold-font:700;
@@ -218,15 +219,17 @@ nav .active{
     flex-direction: row-reverse;
     width: 100%;
     height: 100vh;
+    padding: 5px;
 }
 /* text body start */
 .text-container{
     width: 48%;
     border: 2px solid black;
+    height: 100vh;
 }
 /* header of text body */
 .text-container-head{
-    height: 22%;
+    height: 12%;
 }
 .contact-name{
     display: flex;
@@ -260,35 +263,90 @@ nav .active{
     width: fit-content;
     display: inline-flex;
     background-color: var(--sec-background-clr);
-    border-radius: 5%;
     margin: auto 5px;
     justify-content: center;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
 }
 .text-container-body{
     height: 50%;
 }
+.text-tags svg{
+    margin-right:5px ;
+}
+.ticket-status ,.ticket-status svg{
+    color: blue;
+    fill: blue;
+}
 .text-messaging{
     display: flex;
     flex-wrap: wrap;
+    height: 35%;
 }
 .action-bar{
     background-color: var(--sec-background-clr);
-    height: 35px;
+    height: 20%;
     font-size: var(--regular-font);
     text-transform: uppercase;
     display: flex;
     width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--text-sec-clr);
+}
+.built-in-buttons{
+    height: 70%;
+    width: 78%;
+    overflow: hidden;
+    scroll-behavior: unset;
 }
 .action-bar button{
     background-color: inherit;
-    border: 1px solid var(--text-sec-clr);
+    border: 1px solid rgb(120 120 120 / 20%);
     display: inline-block;
+    font-size: var(--action-font);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 1%;
+    text-transform: uppercase;
+    color: var(--text-sec-clr);
+    box-shadow: 0px 0px 1px 1px rgb(120 120 120 / 58%);
+
+}
+.action-bar button:hover{
+    cursor: pointer;
+    color: var(--action-clr);
+}
+.action-bar button:active , .action-bar button:focus{
+    border: 1px solid rgb(120 120 120 / 88%);
 }
 .action-bar p{
-    font-size: var(--sm-font);
+    font-size: var(--action-font);
     display: inline-block;
+    margin-left: 10px;
 }
 .action-bar div{
     display: inline-block;
+}
+.massageing-container{
+    width: 100%;
+    border: 1px solid red;
+    height:90%;
+    position: relative;
+    
+}
+.massageing-container textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+.massageing-container button{
+    position: absolute;
+    top:90%;
+    left:70%;
+
 }
