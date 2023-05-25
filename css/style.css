@@ -188,7 +188,7 @@ nav svg{
     width: 35px;
     height: 35px;
 }
-nav .user{
+.user{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -217,19 +217,20 @@ nav .active{
 .body-container{
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
-    height: 100vh;
+    width: 99%;
+    height: 96vh;
     padding: 5px;
+    align-items: center;
 }
 /* text body start */
 .text-container{
     width: 48%;
     border: 2px solid black;
-    height: 100vh;
+    height: 90vh;
 }
 /* header of text body */
 .text-container-head{
-    height: 12%;
+    height: 15%;
 }
 .contact-name{
     display: flex;
@@ -239,6 +240,9 @@ nav .active{
 .contact-name span{
     font-size: var(--mid-font);
     color: var(--text-main-clr);
+}
+.contact-name a{
+    margin: 10px;
 }
 .contact-type{
     display: flex;
@@ -276,6 +280,29 @@ nav .active{
 .text-container-body{
     height: 50%;
 }
+
+.rider{
+    background-color: hwb(216 21% 15% / 0.624);
+    border-bottom: 1px solid hwb(216 21% 15% );
+}
+.driver{
+    background-color: rgb(254, 240, 235);
+    border-top: 1px solid rgb(250, 185, 162);
+    border-bottom: 1px solid rgb(250, 185, 162);
+}
+.agent{
+    flex-direction: row-reverse;
+}
+.driver,.rider,.agent{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    font-size: var(--sm-font);
+    margin-bottom: 1px;
+    align-items: flex-start;
+
+}
 .text-tags svg{
     margin-right:5px ;
 }
@@ -291,13 +318,27 @@ nav .active{
 .action-bar{
     background-color: var(--sec-background-clr);
     height: 70px;
-    font-size: var(--action-font);
+    font-size: var(--sm-font);
     text-transform: uppercase;
     display: flex;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
     color: var(--text-sec-clr);
+}
+
+.action-bar button{
+    background-color: inherit;
+    border: 1px solid rgb(120 120 120 / 20%);
+    display: inline-block;
+    font-size: var(--sm-font);
+    padding: 10px;
+    margin: 2px;
+    border-radius: 1%;
+    text-transform: uppercase;
+    color: var(--text-sec-clr);
+    box-shadow: 0px 0px 1px 1px rgb(120 120 120 / 58%);
+
 }
 .action-bar::selection{
     background-color: transparent;
@@ -320,22 +361,9 @@ nav .active{
 .built-in-buttons button {
     margin-bottom: 1000px;
 }
-.action-bar button{
-    background-color: inherit;
-    border: 1px solid rgb(120 120 120 / 20%);
-    display: inline-block;
-    font-size: var(--action-font);
-    padding: 10px;
-    margin: 2px;
-    border-radius: 1%;
-    text-transform: uppercase;
-    color: var(--text-sec-clr);
-    box-shadow: 0px 0px 1px 1px rgb(120 120 120 / 58%);
-
-}
 .action-bar-search{
     position: absolute;
-    right: 20px;
+    right: 30px;
 }
 .action-bar button:hover{
     cursor: pointer;
@@ -345,7 +373,7 @@ nav .active{
     border: 1px solid rgb(120 120 120 / 88%);
 }
 .action-bar p{
-    font-size: var(--action-font);
+    font-size: var(--sm-font);
     display: inline-block;
     margin-left: 10px;
 }
@@ -354,15 +382,16 @@ nav .active{
 }
 .massageing-container{
     width: 100%;
-    border: 1px solid red;
+    padding: 1%;
     height:90%;
     position: relative;
     
 }
 .massageing-container textarea{
     width: 100%;
-    height: 100%;
+    height: 85%;
     resize: none;
+    border: 0;
 }
 
 .ticket-status-buttons{
@@ -370,8 +399,8 @@ nav .active{
     height: 40px;
     background-color: brown;
     position: absolute;
-    bottom:10px;
-    right:10px;
+    bottom: 25px;
+    right: 10px;
     padding: 0px;
     display: flex;
 }
