@@ -251,6 +251,7 @@ nav .active{
 .contact-type span{
     font-size: var(--sm-font);
     color: var(--text-main-clr);
+    cursor: pointer;
 }
 .text-tags{
     display: flex;
@@ -297,6 +298,18 @@ nav .active{
     justify-content: flex-start;
     align-items: center;
     color: var(--text-sec-clr);
+}
+.action-bar::selection{
+    background-color: transparent;
+}
+.action-bar button::selection{
+    background-color: transparent;
+}
+.action-bar p::selection{
+    background-color: transparent;
+}
+.built-in-buttons::selection{
+    background-color: transparent;
 }
 .built-in-buttons{
     height: 72%;
